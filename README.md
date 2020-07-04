@@ -26,6 +26,6 @@ and the script where we have minified the react app as shown below
 
 ```
 <div id="widget--cus"></div>
-<script src="http://flashy-nail.surge.sh/main.js"></script> 
+<script src="https://widget-cus.netlify.app/main.js"></script> 
 
 ```
