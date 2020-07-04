@@ -1,0 +1,9 @@
+$colors: (
+  bg-primary: #212121,
+  bg-secondary: #232f23,
+  text-primary: #91dc69
+);
+
+@function color($variant) {
+  @return map-get($colors, $variant)
+};
