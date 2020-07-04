@@ -5,15 +5,16 @@ import { default_data } from '../../constants';
 export default function () {
   const [open, setOpen] = useState(true);
   const [isLoading, setLoading] = useState(false);
-  const [data, setData] = useState()
+  const [data, setData] = useState(default_data)
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(true);
+    //fetching data from server
     getData().then(res => {
-      setLoading(false)
-      setData(res && res['script test'])
+      setLoading(false);
+      setData(res && res['script test']);
     }).catch(err => {
-      setLoading(false)
+      setLoading(false);
     });
   }, [])
 
@@ -30,9 +31,7 @@ export default function () {
           </div>
         </div> : null}
         <span className={`action--cus ${(open && !isLoading) ? '' : 'alt'}`} onClick={() => setOpen(!open)}>
-          {
-            open ? <i className="fas fa-times"></i> : <i className="fa fa-phone-alt" aria-hidden="true"></i>
-          }
+          {open ? <i className="fas fa-times"></i> : <i className="fa fa-phone-alt" aria-hidden="true"></i>}
         </span>
       </div>
     </div>

@@ -14,10 +14,6 @@ Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
 Builds the app for production to the `dist` folder.<br />
 
 
-
-
-
-
 ### `Instructions to Embed Widget to any website`
 
 We need to provide a div with id `widget--cus`,
@@ -26,6 +22,6 @@ and the script where we have minified the react app as shown below
 
 ```
 <div id="widget--cus"></div>
-<script src="https://widget-cus.netlify.app/main.js"></script> 
+<script src="https://widget-cus.netlify.app/main.js"></script>
 
 ```

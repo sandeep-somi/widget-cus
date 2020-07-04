@@ -68,8 +68,14 @@ body {
       text-align: center;
       color: #fff;
       cursor: pointer;
+      &:hover {
+        color: color(text-primary);
+      }
       &.alt {
-        color: #91dc69;
+        color: color(text-primary);
+        &:hover {
+          color: #fff;
+        }
       }
     }
   }
